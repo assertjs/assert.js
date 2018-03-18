@@ -1,31 +1,67 @@
 {
-    "name": "assert.js",
-    "description": "A better assert",
-    "author": "Juho Vepsalainen <bebraw@gmail.com>",
-    "version": "0.5.0",
-
-    "devDependencies": {
-        "suite.js": "0.4.0",
-        "funkit": "0.5.0"
+  "name": "assert.js",
+  "version": "1.0.0",
+  "description": "A simple javascript runtime assertion library that focuses on performance",
+  "main": "dist/assert.cjs.js",
+  "module": "dist/assert.esm.js",
+  "browser": "dist/assert.umd.js",
+  "minified": "dist/assert.min.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development rollup -c -w",
+    "test": "echo \"No tests specified\"",
+    "prebuild": "shx rm -rf .rpt2_cache dist index.d.ts",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "postbuild": "dts-bundle --configJson dts-bundle.json",
+    "predocs": "shx rm -rf docs",
+    "docs": "typedoc --out docs src"
+  },
+  "config": {
+    "umd_variable_name": "assert"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assertjs/assert.js.git"
+  },
+  "keywords": [
+    "assert",
+    "assertions",
+    "testing"
+  ],
+  "contributors": [
+    {
+      "name": "Michał Jamrożek",
+      "url": "https://github.com/mtronix"
     },
-
-    "main": "./lib/assert.js",
-
-    "repository": {
-        "type": "git",
-        "url": "https://bebraw@github.com/bebraw/assert.js.git"
-    },
-
-    "homepage": "https://github.com/bebraw/assert.js",
-
-    "bugs": {
-        "url": "https://github.com/bebraw/assert.js/issues"
-    },
-
-    "keywords": ["testing", "assert"],
-
-    "licenses": [{
-        "type": "MIT",
-        "url": "https://github.com/bebraw/assert.js/blob/master/LICENSE"
-    }]
+    {
+      "name": "Juho Vepsäläinen",
+      "url": "https://github.com/bebraw"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/assertjs/assert.js/issues"
+  },
+  "homepage": "https://github.com/assertjs/assert.js#readme",
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "dts-bundle": "0.7.3",
+    "rollup": "0.56.5",
+    "rollup-plugin-sourcemaps": "0.4.2",
+    "rollup-plugin-typescript2": "0.12.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "shx": "0.2.2",
+    "typedoc": "0.11.1",
+    "typescript": "2.7.2"
+  },
+  "engines": {
+    "node": ">=6.11.5"
+  },
+  "files": [
+    "dist",
+    "index.d.ts"
+  ]
 }

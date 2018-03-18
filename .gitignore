@@ -1,0 +1,10 @@
+node_modules/
+.idea/
+.vscode/
+.rpt2_cache/
+tmp/
+docs/
+
+*.log
+.DS_Store
+Thumbs.db

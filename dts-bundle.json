@@ -1,0 +1,8 @@
+{
+  "name": "assert",
+  "main": "tmp/declarations/main.d.ts",
+  "baseDir": ".",
+  "out": "index.d.ts",
+  "outputAsModuleFolder": true,
+  "headerText": " Assert.js type declarations "
+}
