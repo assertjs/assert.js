@@ -1,12 +1,14 @@
-import { AssertionError } from '../errors/assertion-error';
-import { assertionTypes } from '../assertion-types';
+import { AssertionException } from '../exceptions/AssertionException';
+import { assertionTypes } from '../assertionTypes';
 
 /**
  * Always throw AssertError
  * @param message
  * @param id
- * @returns void
+ * @returns {void}
  */
-export function fail(message: string = '', id: string = '') {
-  throw new AssertionError(assertionTypes.FAIL, message, id);
+export function fail(message: string = '', id: string = ''): void {
+  if (this.enabled) {
+    throw new AssertionException(assertionTypes.FAIL, message, id);
+  }
 }

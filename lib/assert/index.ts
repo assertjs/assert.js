@@ -1,26 +1,51 @@
 // Assertion types
-export * from './assertion-types';
+export * from './assertionTypes';
 
-// Assertion error
-export * from './errors/assertion-error';
+// Control functions
+export * from './control';
+
+// Assertion exception
+export * from './exceptions/AssertionException';
 
 // Basic
 export * from './basic/fail';
-export * from './basic/is-truthy';
-export * from './basic/is-falsy';
-export * from './basic/is-empty';
+export * from './basic/isTruthy';
+export * from './basic/isFalsy';
+export * from './basic/isEmpty';
+export * from './basic/isNotEmpty';
 
 // Types
-export * from './types/is-bool';
-export * from './types/is-not-bool';
-export * from './types/is-true';
-export * from './types/is-not-true';
-export * from './types/is-false';
-export * from './types/is-not-false';
-export * from './types/instance-of';
+export * from './types/isDefined';
+export * from './types/isUndefined';
+export * from './types/isBool';
+export * from './types/isNotBool';
+export * from './types/isNumber';
+export * from './types/isNotNumber';
+export * from './types/isFloat';
+export * from './types/isNotFloat';
+export * from './types/isNaN';
+export * from './types/isNotNaN';
+export * from './types/isString';
+export * from './types/isNotString';
+export * from './types/isArray';
+export * from './types/isNotArray';
+export * from './types/isFunction';
+export * from './types/isNotFunction';
+export * from './types/isSymbol';
+export * from './types/isNotSymbol';
+export * from './types/isInstanceOf';
+export * from './types/isNotInstanceOf';
+
+// Values
+export * from './values/isTrue';
+export * from './values/isNotTrue';
+export * from './values/isFalse';
+export * from './values/isNotFalse';
+export * from './values/isNull';
+export * from './values/isNotNull';
 
 // Expressions
 //   greater than, lower than etc.
 
 // Utils
-//   regexp assertions etc.
+export * from './utils/match';
