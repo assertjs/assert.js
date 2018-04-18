@@ -1,0 +1,51 @@
+export enum assertionTypes {
+  // Basic
+  FAIL,
+  IS_TRUTHY,
+  IS_FALSY,
+  IS_EMPTY,
+  IS_NOT_EMPTY,
+
+  // Types
+  IS_DEFINED,
+  IS_UNDEFINED,
+  IS_BOOL,
+  IS_NOT_BOOL,
+  IS_NUMBER,
+  IS_NOT_NUMBER,
+  IS_FLOAT,
+  IS_NOT_FLOAT,
+  IS_NAN,
+  IS_NOT_NAN,
+  IS_STRING,
+  IS_NOT_STRING,
+  IS_ARRAY,
+  IS_NOT_ARRAY,
+  IS_FUNCTION,
+  IS_NOT_FUNCTION,
+  IS_SYMBOL,
+  IS_NOT_SYMBOL,
+  INSTANCE_OF,
+  NOT_INSTANCE_OF,
+
+  // Values
+  IS_TRUE,
+  IS_NOT_TRUE,
+  IS_FALSE,
+  IS_NOT_FALSE,
+  IS_NULL,
+  IS_NOT_NULL,
+
+  // Expressions
+  // EQUAL,
+  // NOT_EQUAL,
+  // GREATER_THAN,
+  // GREATER_THAN_OR_EQUAL,
+  // LOWER_THAN,
+  // LOWER_THAN_OR_EQUAL,
+  // BETWEEN,
+  // OUTSIDE,
+
+  // Utils
+  MATCH
+};
