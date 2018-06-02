@@ -1,6 +1,6 @@
 {
   "name": "assert.js",
-  "version": "1.0.0-aplha",
+  "version": "1.0.0-alpha.0",
   "description": "A simple javascript runtime assertion library that focuses on performance",
   "main": "dist/assert.cjs.js",
   "module": "dist/assert.esm.js",
