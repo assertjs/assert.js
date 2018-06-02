@@ -2,8 +2,8 @@ node_modules/
 .idea/
 .vscode/
 .rpt2_cache/
+dist/
 tmp/
-docs/
 
 *.log
 .DS_Store

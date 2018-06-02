@@ -1,7 +1,7 @@
 /**
   Assert.js - javascript assertions library
-  Version: 1.0.0
-  Build: Sun, 25 Mar 2018 16:34:03 GMT
+  Version: 1.0.0-aplha
+  Build: Sat, 02 Jun 2018 19:48:10 GMT
   @license MIT
   @preserve
 */

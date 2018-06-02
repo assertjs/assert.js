@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "6"
+  - "7"
+  - "8"
+  - "9"
+install:
+  - npm install
+script:
+  - npm run build
+  - npm test
+jobs:
+  include:
+    - stage: release
+      node_js: "lts/*"
+      script:
+        - npm shrinkwrap
+      deploy:
+        provider: npm
+        if: tag IS present
+        skip_cleanup: true
+        email: $NPM_EMAIL
+        api_key: $NPM_API_KEY
+        on:
+          branch: master
+          tags: true
