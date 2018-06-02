@@ -17,8 +17,6 @@ jobs:
         - npm shrinkwrap
       deploy:
         provider: npm
-        if: tag IS present
-        skip_cleanup: true
         email: $NPM_EMAIL
         api_key: $NPM_API_KEY
         on:
