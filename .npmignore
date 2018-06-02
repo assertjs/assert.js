@@ -1,0 +1,7 @@
+docs
+tests
+
+.travis.yml
+rollup.config.js
+Makefile
+*.md

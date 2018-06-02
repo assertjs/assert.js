@@ -35,10 +35,6 @@
     {
       "name": "Michał Jamrożek",
       "url": "https://github.com/mtronix"
-    },
-    {
-      "name": "Juho Vepsäläinen",
-      "url": "https://github.com/bebraw"
     }
   ],
   "license": "MIT",
@@ -58,9 +54,10 @@
     "typescript": "2.7.2"
   },
   "engines": {
-    "node": ">=6.11.5"
+    "node": ">=8.0.0"
   },
   "files": [
+    "lib",
     "dist",
     "index.d.ts"
   ]
